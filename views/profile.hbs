@@ -1,2 +1,39 @@
 {{>navigation}}
 <h1>Profile</h1>
+
+<h2>My profile</h2>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+
+            <div class="card hovercard">
+                <div class="cardheader">
+                    {{user.name}}
+                </div>
+                <div class="avatar">
+                    <img alt="" style="width: 40%;" src="{{user.imageUrl}}">
+                </div>
+                <div class="info">
+                    <div class="desc">Correo:</div>{{user.email}}
+                    <div class="desc">ID:</div>{{user.id}}
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher" href="https://plus.google.com/">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher" href="https://plus.google.com/">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
